@@ -17,7 +17,7 @@
                     <form class="select" method ="post" action="{{route('show')}}">
                     {{csrf_field()}}
                     <h3>Select player role:</h3>
-                    <select class ="search">      
+                    <select class ="search" name="role">      
                         <optgroup label="select">                
                         @foreach($roles as $role)
                             <option value="{{$role}}" id = "role" name="role">{{$role}}</option>
