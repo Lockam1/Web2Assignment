@@ -14,10 +14,14 @@ class CrickectController extends Controller
         $roles = player::groupBy('role')->pluck('role');
         
         return view('welcome',compact('players', 'roles'));
-
-    public function show($id)
+    
+    }
+    public function show(Request $request)
     {
-        $player = player::find($id);
-        return view('show', compact('player'));
+        $role = $request->role;
+
+        $players = player::where('role', $role)->get();
+
+        return view('show', compact('players'));
     }
 }

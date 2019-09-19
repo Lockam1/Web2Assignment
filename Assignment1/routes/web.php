@@ -24,4 +24,8 @@ Route::get('/about', 'CrickectController@show', function () {
 Route::get('/about', function () {
     return view('about');
 });
+
+
+Route::post('/show', 'CrickectController@show')->name('show');
+
 //Route::get('/', 'PagesController@home');

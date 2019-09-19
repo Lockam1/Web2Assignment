@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title','Home')
+@section('title','Show')
 @section('content')
     <body>
         <div id = "left">
@@ -8,9 +8,9 @@
             </div>
 
             
-              
-                <h2 class="text-center">Refined Search:</h2>
-                <h3>Select Role:</h3>
+                <div class = 'title1'>
+                    <h2 class="text-center">Refined Search:</h2>
+                </div>
 
                 <div class = "table">                   
                 <table>

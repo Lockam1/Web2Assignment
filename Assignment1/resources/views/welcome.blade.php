@@ -8,20 +8,22 @@
             </div>
 
             
-            <div>   
+            <div class ="title1">   
                 <h2 class="text-center">All Players</h2>
-                <h3>Select Role:</h3>
-                <form method ="POST" action="/show">
-                {{csrf_field()}}
-                <select class ="search">      
-                    <optgroup label="select">                
-                    @foreach($roles as $role)
-                        <option value="$role">{{$role}}</option>
-                    @endforeach
-                    </optgroup>
-                </select>
-                <button type = "submit" >Search the Query.</button>
-                </form>
+                <div class="buttons">
+                    <form class="select" method ="POST" action="{{route('show')}}">
+                    {{csrf_field()}}
+                    <h3>Select Role:</h3>
+                    <select class ="search">      
+                        <optgroup label="select">                
+                        @foreach($roles as $role)
+                            <option value="{{$role}}" name="role">{{$role}}</option>
+                        @endforeach
+                        </optgroup>
+                    </select>
+                    <button class ="submit" type = "submit" >Search the Query</button>
+                    </form>
+                </div>
             </div>
             <div class = "table">                   
                 <table>

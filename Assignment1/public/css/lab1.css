@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,p{
+h1,h2,h4,h5,p{
     color: white !important;
     padding: 30px !important;
    
@@ -7,7 +7,13 @@ h1{
     font-size:50px !important;
 }
 h2{
+    padding-bottom: 0px !important;
     font-size: 35px !important;
+    width: 50%;
+}
+h3{
+    color: white !important;
+    
 }
 p{
     font-size: 18px !important;
@@ -18,6 +24,7 @@ p{
 .text-center
 {
     text-align: center;
+    margin:30px;
 }
 body{
     margin-top: 0%;
@@ -115,7 +122,10 @@ table {
     width: 100%;
     padding-left:10px;
     padding-right:10px;
+    position: relative;
+    top: 20vh;
   }
+
   
   td, th {
     border: 1px solid #dddddd;
@@ -132,5 +142,28 @@ table {
       background-color: #181818;
   }
   .search{
+      width: 40%;
       float: right;
+  }
+  .submit{
+      
+      float: right;
+      
+  }
+  .select{
+    padding-top: 0px;
+    
+  }
+
+  .buttons{
+      float: right;
+      padding: 10px;
+  }
+  h2.text-center{
+      width: 40% !important;
+  }
+  .title1{
+      position: absolute;
+      top: 10%;
+      width: 60%;
   }
