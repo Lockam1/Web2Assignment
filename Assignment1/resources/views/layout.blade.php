@@ -7,7 +7,7 @@
     <title>@yield('title', 'Assignment1')</title>
     
     <link type="text/css" rel="stylesheet" href="{{asset('css/lab1.css')}}">
-    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
     
 
 

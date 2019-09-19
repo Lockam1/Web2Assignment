@@ -4,20 +4,23 @@
     <body>
         <div id = "left">
             <div class ="title">
-                <h1 class = "text-center" id ="width">NZ Cricket</h1>
+                <h1 class = "text-center" id ="title">NZ Cricket</h1>
+                
             </div>
 
             
             <div class ="title1">   
-                <h2 class="text-center">All Players</h2>
+                <h2 class="text-center">All Players:</h2>
+                <h3 class="text-center">Table showing all players from the current New Zealand national cricket team.</h3>
+
                 <div class="buttons">
-                    <form class="select" method ="POST" action="{{route('show')}}">
+                    <form class="select" method ="post" action="{{route('show')}}">
                     {{csrf_field()}}
-                    <h3>Select Role:</h3>
+                    <h3>Select player role:</h3>
                     <select class ="search">      
                         <optgroup label="select">                
                         @foreach($roles as $role)
-                            <option value="{{$role}}" name="role">{{$role}}</option>
+                            <option value="{{$role}}" id = "role" name="role">{{$role}}</option>
                         @endforeach
                         </optgroup>
                     </select>
@@ -25,7 +28,7 @@
                     </form>
                 </div>
             </div>
-            <div class = "table">                   
+            <div>                   
                 <table>
                     <tr> 
                         <th>ID</th>
@@ -34,7 +37,7 @@
                         <th>Role</th>
                         <th>Batting</th>
                         <th>Bowling</th>
-                        <th>Image</th>
+                        
                         <th>ODI Runs</th>
                         <th>Country</th>
                         
@@ -47,7 +50,7 @@
                         <td>{{$player->role}}</td>
                         <td>{{$player->batting}}</td>
                         <td>{{$player->bowling}}</td>
-                        <td>{{$player->image}}</td>
+                        
                         <td>{{$player->odiRuns}}</td>
                         <td>{{$player->country_id}}</td>
                     </tr>

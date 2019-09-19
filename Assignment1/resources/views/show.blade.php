@@ -4,7 +4,7 @@
     <body>
         <div id = "left">
             <div class ="title">
-                <h1 class = "text-center" id ="width">NZ Cricket</h1>
+                <h1 class = "text-center" id ="title">NZ Cricket</h1>
             </div>
 
             
@@ -34,7 +34,7 @@
                         <td>{{$player->role}}</td>
                         <td>{{$player->batting}}</td>
                         <td>{{$player->bowling}}</td>
-                        <td>{{$player->image}}</td>
+                        <td><img src="public/images/{{$player->image}}" class="css-class" alt="Images"></td>
                         <td>{{$player->odiRuns}}</td>
                         <td>{{$player->country_id}}</td>
                     </tr>

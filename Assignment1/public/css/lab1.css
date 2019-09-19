@@ -1,3 +1,12 @@
+body {
+    font-family: 'Lora', serif;
+   }
+   
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+   }
 h1,h2,h4,h5,p{
     color: white !important;
     padding: 30px !important;
@@ -21,21 +30,22 @@ p{
     margin-right: 30% !important;
     }
 
+
 .text-center
 {
     text-align: center;
-    margin:30px;
+    
 }
 body{
     margin-top: 0%;
+    margin-left: 0;
     width: 100%;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 50 !important  ;
+    
 }
 .nav{
     width: 100%;
-    
-    background-color: Black;
+    background-image: linear-gradient(#505050, #333333);
+    /* background-color: Black; */
     position: absolute;
     top:0;
 }
@@ -74,7 +84,8 @@ div#left
 {
     width : 60%;
     height: 100vh;
-    background-color: #505050;
+    background-image: linear-gradient(#505050, #b6b6b6);
+    /* background-color: #505050; */
     float: left;
 }
 div#right
@@ -120,10 +131,11 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    padding-top: 30px;
     padding-left:10px;
     padding-right:10px;
     position: relative;
-    top: 20vh;
+    top: 22vh;
   }
 
   
@@ -142,7 +154,8 @@ table {
       background-color: #181818;
   }
   .search{
-      width: 40%;
+      width: 100%;
+      height: 30px;
       float: right;
   }
   .submit{
@@ -154,16 +167,37 @@ table {
     padding-top: 0px;
     
   }
-
+  button {
+    background-color: #585858;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+  }
+  button:hover{
+      background-color: #686868;
+  }
   .buttons{
       float: right;
       padding: 10px;
   }
   h2.text-center{
-      width: 40% !important;
+      
+      padding-top: 30%;
+      margin: 0 auto;
   }
   .title1{
       position: absolute;
-      top: 10%;
+      top: 12%;
       width: 60%;
+  }
+  optgroup{
+    background:#686868;
+    color:#fff;
+    font-style:normal;
+    font-weight:normal;
   }

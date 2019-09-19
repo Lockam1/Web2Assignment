@@ -20,8 +20,8 @@ class CrickectController extends Controller
     {
         $role = $request->role;
 
-        $players = player::where('role', $role)->get();
-
+        // $players = player::where('role', $role)->get('role');
+        $players = player::all()->where('role', $role);
         return view('show', compact('players'));
     }
 }

@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Input;
 Route::get('/', 'CrickectController@index', function () {
     return view('welcome');
 });
+Route::post('/show', 'CrickectController@show')->name('show');
 
-Route::get('/about', 'CrickectController@show', function () {
-    return view('/show');
-});
+
 
 
 Route::get('/about', function () {
@@ -26,6 +25,6 @@ Route::get('/about', function () {
 });
 
 
-Route::post('/show', 'CrickectController@show')->name('show');
+
 
 //Route::get('/', 'PagesController@home');
